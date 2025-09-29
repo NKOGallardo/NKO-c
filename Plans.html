@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NKO CODING</title>
+  <link class="icon" rel="icon" href="images/Logo.png">
+  <link rel="stylesheet" href="Style-plan.css"
+</head>
+<body>
+
+  <header>
+    <img src="images/Logo.png" alt="NKO CODING Logo">
+    <h1>NKO CODING (Prices)</h1>
+    <div class="coming-soon">
+      Still Live <span class="dot"></span>
+    </div>
+  </header>
+
+  <section class="pricing">
+    <div class="card">
+      <h3>Basic</h3>
+      <p class="price">R500 – R1,000</p>
+      <div class="plan-includes">
+        <h4>The plan includes:</h4>
+        <ul class="features-list">
+          <li>Up to 5 static pages (Home, About, Services, Contact)</li>
+          <li>Basic responsive HTML/CSS template</li>
+          <li>Basic SEO meta tags</li>
+          <li>Email contact form</li>
+          <li>Social media links</li>
+        </ul>
+      </div>
+      <button class="get-started-btn">Get Started</button>
+    </div>
+
+    <div class="card">
+      <h3>Standard</h3>
+      <p class="price">R1,500 – R3,000</p>
+      <div class="plan-includes">
+        <h4>The plan includes:</h4>
+        <ul class="features-list">
+          <li>6–10 pages (Services, Portfolio, optional blog)</li>
+          <li>Semi-custom design with branding & layout tweaks</li>
+          <li>Enhanced SEO and Google Analytics integration</li>
+          <li>Optional headless CMS for content updates</li>
+          <li>Interactive elements (newsletter signup, maps)</li>
+        </ul>
+      </div>
+      <button class="get-started-btn">Get Started</button>
+    </div>
+
+    <div class="card">
+      <h3>Premium</h3>
+      <p class="price">R5,000 – R10,000+</p>
+      <div class="plan-includes">
+        <h4>The plan includes:</h4>
+        <ul class="features-list">
+          <li>10+ pages with full customization</li>
+          <li>Advanced UI/UX with animations & galleries</li>
+          <li>Multiple forms (contact, newsletter, quote requests)</li>
+          <li>Premium SEO & performance optimization</li>
+          <li>Optional content creation (copywriting, stock photos)</li>
+          <li>Headless CMS or custom WordPress integration</li>
+          <li>Future-ready for e-commerce or API integrations</li>
+        </ul>
+      </div>
+      <button class="get-started-btn">Get Started</button>
+    </div>
+  </section>
+
+  <button class="floating-btn" onclick="togglePricingBox()">See Prices</button>
+
+  <div class="pricing-box" id="pricingBox">
+    <span class="close-btn" onclick="togglePricingBox()">&times;</span>
+    <h2>Quick Plan Overview</h2>
+    <div class="plan-summary">
+      <strong>Basic - R500 – R1,000</strong>
+      <p>Perfect for small businesses needing a simple static site</p>
+    </div>
+    <div class="plan-summary">
+      <strong>Standard - R1,500 – R3,000</strong>
+      <p>Ideal for businesses needing a semi-custom website with blog or portfolio</p>
+    </div>
+    <div class="plan-summary">
+      <strong>Premium - R5,000 – R10,000+</strong>
+      <p>Complete solution for fully custom, professional websites</p>
+    </div>
+  </div>
+
+  <script href="Script.js">
+    function togglePricingBox() {
+      const pricingBox = document.getElementById('pricingBox');
+      pricingBox.classList.toggle('active');
+    }
+
+       // Add event listeners to all "Get Started" buttons
+   document.querySelectorAll('.get-started-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      window.open('https://wa.me/+27659534786', '_blank');
+    });
+  });
+ 
+  </script>
+</body>
+</html>
