@@ -120,6 +120,37 @@
     <a href="Plans.html" class="btn">see your plans</a>
   </div>
 
+  <div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<script>
+  const dot = document.querySelector('.cursor-dot');
+  const ring = document.querySelector('.cursor-ring');
+
+  document.addEventListener('mousemove', (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+
+    dot.style.left = x + 'px';
+    dot.style.top = y + 'px';
+
+    ring.style.left = x + 'px';
+    ring.style.top = y + 'px';
+  });
+
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      ring.style.transform = 'translate(-50%, -50%) scale(1.6)';
+      ring.style.borderColor = '#00d9ff';
+    });
+
+    el.addEventListener('mouseleave', () => {
+      ring.style.transform = 'translate(-50%, -50%) scale(1)';
+      ring.style.borderColor = '#ffffff';
+    });
+  });
+</script>
+
 
   <script href="Script.js">
 
@@ -181,6 +212,7 @@
   </script>
 </body>
 </html>
+
 
 
 
