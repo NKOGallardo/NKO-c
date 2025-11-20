@@ -1,3 +1,35 @@
+
+/* --- CUSTOM CURSOR --- */
+* {
+  cursor: none; /* Hide default cursor */
+}
+
+/* The cursor dot */
+.cursor-dot {
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* The cursor ring */
+.cursor-ring {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9998;
+  transition: 0.15s ease-out;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -467,3 +499,4 @@ footer {
     display: flex;
   }
 }
+
