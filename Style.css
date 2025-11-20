@@ -8,7 +8,7 @@
 .cursor-dot {
   width: 10px;
   height: 10px;
-  background: #ffffff;
+  background: #000;
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -20,7 +20,7 @@
 .cursor-ring {
   width: 35px;
   height: 35px;
-  border: 2px solid #ffffff;
+  border: 2px solid #000;
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -499,4 +499,5 @@ footer {
     display: flex;
   }
 }
+
 
