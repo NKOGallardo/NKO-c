@@ -14,6 +14,7 @@ body {
 
 header img {
   width: 100px;
+  border-radius: 50%;
 }
 
 h1 {
@@ -228,4 +229,5 @@ h1 {
   .pricing-box.active {
     right: 5%;
   }
+
 }
