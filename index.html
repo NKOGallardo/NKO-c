@@ -1,17 +1,512 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="Get your website" content="nkogallardo.link" />
-    <meta name="Ntobeko" content="nkogallardo.link" />
-    <link rel="icon" type="image/svg+xml" href="/public/Logo.png" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NKO CODING — Premium Web Development</title>
+  <meta name="description" content="NKO CODING delivers premium, modern websites and web apps for businesses that demand excellence." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styel.css" />
+</head>
+<body>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">NKO<span>CODING</span></a>
+      <nav class="nav__links">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav__cta">Get Started</a>
+      </nav>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Get Started</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="hero__grid"></div>
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+      </div>
+      <div class="hero__content">
+        <div class="hero__badge reveal">
+          <span class="hero__badge-dot"></span>
+          Available for new projects
+        </div>
+        <h1 class="hero__headline reveal">
+          We Build <br /><em>Digital Experiences</em><br /> That Convert
+        </h1>
+        <p class="hero__sub reveal">
+          Premium websites and web applications crafted for businesses that refuse to blend in. Precise code. Refined design. Real results.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#pricing" class="btn btn--primary">View Pricing</a>
+          <a href="#projects" class="btn btn--ghost">See Our Work</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="stat">
+            <span class="stat__num" data-count="50">0</span><span class="stat__plus">+</span>
+            <span class="stat__label">Projects Delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="98">0</span><span class="stat__plus">%</span>
+            <span class="stat__label">Client Satisfaction</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="5">0</span><span class="stat__plus">+</span>
+            <span class="stat__label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual reveal">
+        <div class="code-card">
+          <div class="code-card__bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="code-card__file">index.html</span>
+          </div>
+          <pre class="code-card__body"><code><span class="t-tag">&lt;section</span> <span class="t-attr">class</span>=<span class="t-str">"hero"</span><span class="t-tag">&gt;</span>
+  <span class="t-tag">&lt;h1&gt;</span>
+    <span class="t-txt">Digital Excellence</span>
+  <span class="t-tag">&lt;/h1&gt;</span>
+  <span class="t-tag">&lt;p&gt;</span>
+    <span class="t-txt">Built by NKO CODING</span>
+  <span class="t-tag">&lt;/p&gt;</span>
+  <span class="t-tag">&lt;a</span> <span class="t-attr">href</span>=<span class="t-str">"#start"</span><span class="t-tag">&gt;</span>
+    <span class="t-txt">Launch Project</span>
+  <span class="t-tag">&lt;/a&gt;</span>
+<span class="t-tag">&lt;/section&gt;</span></code></pre>
+        </div>
+      </div>
+      <a href="#services" class="hero__scroll">
+        <span>Scroll</span>
+        <svg width="16" height="24" viewBox="0 0 16 24"><path d="M8 0v20M1 13l7 7 7-7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow">What We Do</span>
+          <h2>Services Built for <em>Growth</em></h2>
+          <p>Every service is carefully executed to ensure your digital presence performs as hard as you do.</p>
+        </div>
+        <div class="services__grid">
+          <div class="service-card reveal">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2"/><path d="M16 40h16M24 36v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 20l4 4-4 4M20 24h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Fast, responsive, and pixel-perfect websites from landing pages to complex web applications — built to convert.</p>
+            <ul class="service-card__list">
+              <li>Responsive design</li>
+              <li>Performance optimized</li>
+              <li>Cross-browser compatible</li>
+            </ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/><path d="M24 6C17 12 14 18 14 24s3 12 10 18M24 6c7 6 10 12 10 18s-3 12-10 18" stroke="currentColor" stroke-width="2"/><path d="M6 24h36" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>SEO & Performance</h3>
+            <p>We build search-engine-ready websites with technical SEO baked into every line of code from the start.</p>
+            <ul class="service-card__list">
+              <li>On-page SEO</li>
+              <li>Core Web Vitals</li>
+              <li>Google Analytics</li>
+            </ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="12" width="22" height="30" rx="3" stroke="currentColor" stroke-width="2"/><rect x="20" y="6" width="22" height="30" rx="3" stroke="currentColor" stroke-width="2"/><path d="M12 22h10M12 28h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Thoughtful, user-centred design that guides visitors naturally toward action and builds lasting brand trust.</p>
+            <ul class="service-card__list">
+              <li>Wireframes & prototypes</li>
+              <li>Brand alignment</li>
+              <li>Interaction design</li>
+            </ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M24 4l4 8 9 1.3-6.5 6.3 1.5 9L24 24l-8 4.6 1.5-9L11 13.3 20 12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 36l6 6M34 36l6 6M16 40h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Custom Branding</h3>
+            <p>From logo identity to full brand systems — we create cohesive visual identities that leave lasting impressions.</p>
+            <ul class="service-card__list">
+              <li>Logo design</li>
+              <li>Color & typography</li>
+              <li>Brand guidelines</li>
+            </ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/><path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Web Apps</h3>
+            <p>Full-featured web applications with backend integrations, databases, authentication, and real-time functionality.</p>
+            <ul class="service-card__list">
+              <li>Custom dashboards</li>
+              <li>API integrations</li>
+              <li>CMS solutions</li>
+            </ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M24 4C13 4 4 13 4 24s9 20 20 20 20-9 20-20S35 4 24 4z" stroke="currentColor" stroke-width="2"/><path d="M24 14v10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Maintenance</h3>
+            <p>Ongoing support, updates, security patches, and performance monitoring to keep your site fast and secure.</p>
+            <ul class="service-card__list">
+              <li>Monthly updates</li>
+              <li>Security monitoring</li>
+              <li>Priority support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow">Transparent Pricing</span>
+          <h2>Plans for Every <em>Ambition</em></h2>
+          <p>No hidden fees. No surprises. Just exceptional work at honest prices.</p>
+        </div>
+        <div class="pricing__grid">
+
+          <!-- Basic -->
+          <div class="pricing-card reveal">
+            <div class="pricing-card__header">
+              <span class="pricing-card__tier">Basic</span>
+              <div class="pricing-card__price">
+                <span class="pricing-card__from">from</span>
+                <span class="pricing-card__amount">R500</span>
+                <span class="pricing-card__to">– R1,000</span>
+              </div>
+              <p class="pricing-card__desc">Perfect for startups & personal brands needing a clean, professional online presence.</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 5 pages</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Responsive design</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Basic SEO</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Contact form</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Social media links</li>
+              <li class="disabled"><svg viewBox="0 0 20 20" fill="none"><path d="M6 14L14 6M6 6l8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> Custom branding</li>
+              <li class="disabled"><svg viewBox="0 0 20 20" fill="none"><path d="M6 14L14 6M6 6l8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> Advanced animations</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline">Get Started</a>
+          </div>
+
+          <!-- Standard -->
+          <div class="pricing-card pricing-card--popular reveal">
+            <div class="pricing-card__badge">Most Popular</div>
+            <div class="pricing-card__header">
+              <span class="pricing-card__tier">Standard</span>
+              <div class="pricing-card__price">
+                <span class="pricing-card__from">from</span>
+                <span class="pricing-card__amount">R1,500</span>
+                <span class="pricing-card__to">– R3,000</span>
+              </div>
+              <p class="pricing-card__desc">For growing businesses ready to invest in a powerful, branded digital experience.</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 6–10 pages</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom branding</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Enhanced SEO</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Google Analytics</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Interactive elements</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Contact form</li>
+              <li class="disabled"><svg viewBox="0 0 20 20" fill="none"><path d="M6 14L14 6M6 6l8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> Advanced animations</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary">Get Started</a>
+          </div>
+
+          <!-- Premium -->
+          <div class="pricing-card reveal">
+            <div class="pricing-card__header">
+              <span class="pricing-card__tier">Premium</span>
+              <div class="pricing-card__price">
+                <span class="pricing-card__from">from</span>
+                <span class="pricing-card__amount">R5,000</span>
+                <span class="pricing-card__to">– R10,000+</span>
+              </div>
+              <p class="pricing-card__desc">For brands that demand world-class digital experiences with zero compromise.</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 10+ pages</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Advanced UI/UX animations</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Full SEO & performance</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Multiple forms</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Premium design</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom branding</li>
+              <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Priority support</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline">Get Started</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow">Our Work</span>
+          <h2>Projects We're <em>Proud Of</em></h2>
+          <p>A selection of websites and applications we've crafted for forward-thinking clients.</p>
+        </div>
+        <div class="projects__grid">
+          <div class="project-card reveal">
+            <div class="project-card__visual project-card__visual--1">
+              <span class="project-card__tag">E-Commerce</span>
+            </div>
+            <div class="project-card__body">
+              <h3>ShopPulse</h3>
+              <p>A premium e-commerce platform with dynamic product filtering, cart system, and seamless checkout flow.</p>
+              <div class="project-card__stack">
+                <span>HTML</span><span>CSS</span><span>JS</span><span>Node.js</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-card__visual project-card__visual--2">
+              <span class="project-card__tag">Corporate</span>
+            </div>
+            <div class="project-card__body">
+              <h3>NexaFinance</h3>
+              <p>A sleek corporate website for a financial advisory firm with animated data visualizations and lead forms.</p>
+              <div class="project-card__stack">
+                <span>HTML</span><span>CSS</span><span>Chart.js</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-card__visual project-card__visual--3">
+              <span class="project-card__tag">Portfolio</span>
+            </div>
+            <div class="project-card__body">
+              <h3>ArtHaus</h3>
+              <p>An editorial-style portfolio for a design studio with full-bleed imagery, smooth page transitions, and GSAP animations.</p>
+              <div class="project-card__stack">
+                <span>HTML</span><span>CSS</span><span>GSAP</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-card__visual project-card__visual--4">
+              <span class="project-card__tag">Web App</span>
+            </div>
+            <div class="project-card__body">
+              <h3>TaskFlow Pro</h3>
+              <p>A project management web app with real-time collaboration, task boards, and team dashboards.</p>
+              <div class="project-card__stack">
+                <span>HTML</span><span>CSS</span><span>JS</span><span>Firebase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__content reveal">
+            <span class="eyebrow">Who We Are</span>
+            <h2>Craftsmanship Meets <em>Technology</em></h2>
+            <p>NKO CODING is a boutique web development studio focused on creating digital experiences that matter. We combine clean engineering with sharp design thinking to build websites that don't just look good — they perform.</p>
+            <p>We work closely with each client to understand their goals, audience, and competitive landscape before writing a single line of code. The result: websites that feel tailor-made, because they are.</p>
+            <div class="about__values">
+              <div class="value-pill">⚡ Speed-first</div>
+              <div class="value-pill">🎯 Goal-driven</div>
+              <div class="value-pill">🔒 Secure by default</div>
+              <div class="value-pill">♿ Accessible</div>
+            </div>
+            <a href="#contact" class="btn btn--primary">Let's Talk</a>
+          </div>
+          <div class="about__visual reveal">
+            <div class="about__card about__card--1">
+              <div class="about__card-icon">🚀</div>
+              <h4>Fast Delivery</h4>
+              <p>Most projects delivered within 2–4 weeks from brief to launch.</p>
+            </div>
+            <div class="about__card about__card--2">
+              <div class="about__card-icon">💡</div>
+              <h4>Strategy-Led</h4>
+              <p>We start with your goals — every design decision serves a purpose.</p>
+            </div>
+            <div class="about__card about__card--3">
+              <div class="about__card-icon">🛠️</div>
+              <h4>Post-Launch Support</h4>
+              <p>We don't disappear after handoff. Ongoing maintenance available.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS (simple strip) -->
+    <section class="testimonials section">
+      <div class="container">
+        <div class="testimonials__track" id="testiTrack">
+          <div class="testi-card">
+            <p>"NKO CODING transformed our online presence completely. The new website doubled our inquiry rate within weeks."</p>
+            <span class="testi-card__author">— Sipho M., ShopPulse CEO</span>
+          </div>
+          <div class="testi-card">
+            <p>"Professional, fast, and incredibly talented. They nailed our brand from the first draft. Highly recommended."</p>
+            <span class="testi-card__author">— Amahle D., ArtHaus Studio</span>
+          </div>
+          <div class="testi-card">
+            <p>"The attention to detail is remarkable. Our site loads in under a second and looks stunning on every device."</p>
+            <span class="testi-card__author">— Lebo K., NexaFinance</span>
+          </div>
+          <div class="testi-card">
+            <p>"Working with NKO CODING was seamless. Clear communication, on-time delivery, and a site we're genuinely proud of."</p>
+            <span class="testi-card__author">— Thabo N., TaskFlow Pro</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__info reveal">
+            <span class="eyebrow">Get In Touch</span>
+            <h2>Ready to Build <em>Something Great?</em></h2>
+            <p>Tell us about your project and we'll get back to you within 24 hours with a tailored proposal.</p>
+            <div class="contact__details">
+              <div class="contact__detail">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5"/></svg>
+                hello@nkocoding.co.za
+              </div>
+              <div class="contact__detail">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.88 10.5 19.79 19.79 0 01.79 2.18 2 2 0 012.88.07h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0121.92 15z" stroke="currentColor" stroke-width="1.5"/></svg>
+                +27 60 123 4567
+              </div>
+              <div class="contact__detail">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                Johannesburg, South Africa
+              </div>
+            </div>
+            <div class="contact__socials">
+              <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke="currentColor" stroke-width="1.5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </a>
+              <a href="#" aria-label="Twitter / X">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.5"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
+              </a>
+            </div>
+          </div>
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Your first name" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Your last name" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="plan">Interested Plan</label>
+              <select id="plan" name="plan">
+                <option value="">Select a plan...</option>
+                <option value="basic">Basic (R500 – R1,000)</option>
+                <option value="standard">Standard (R1,500 – R3,000)</option>
+                <option value="premium">Premium (R5,000 – R10,000+)</option>
+                <option value="custom">Custom Project</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Project</label>
+              <textarea id="message" name="message" rows="5" placeholder="Describe your website, goals, timeline..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span class="btn-text">Send Message</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="form__success" id="formSuccess">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M8 12l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Message sent! We'll be in touch within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#hero" class="nav__logo">NKO<span>CODING</span></a>
+          <p>Premium web development for businesses that refuse to blend in.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h5>Services</h5>
+            <a href="#services">Web Development</a>
+            <a href="#services">UI/UX Design</a>
+            <a href="#services">SEO & Performance</a>
+            <a href="#services">Web Apps</a>
+          </div>
+          <div class="footer__col">
+            <h5>Company</h5>
+            <a href="#about">About Us</a>
+            <a href="#projects">Projects</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 NKO CODING. All rights reserved.</p>
+        <p>Built with passion in Johannesburg, SA 🇿🇦</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <script src="script.js"></script>
+</body>
 </html>
