@@ -1,1 +1,1 @@
-A store for website
+nkocoding.codes
