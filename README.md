@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/Focus-Web%20Development-1A2330?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Level-Student%20Developer-blue?style=for-the-badge"/>
   <br>
-  <img src="https://img.shields.io/badge/We are-LIVE-Red?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/We are-LIVE-red?style=for-the-badge"/>
 </p>
 
 ---
