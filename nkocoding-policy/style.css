@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+
+body{
+    background:#050816;
+    color:white;
+    line-height:1.7;
+}
+
+
+/* Navbar */
+
+header{
+    padding:25px 8%;
+    background:#080d20;
+    position:sticky;
+    top:0;
+}
+
+
+nav h1{
+    font-size:30px;
+}
+
+
+nav span{
+    color:#00eaff;
+}
+
+
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+
+.hero h2{
+    font-size:55px;
+    background:linear-gradient(90deg,#00eaff,#7c3cff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+
+.hero p{
+    color:#aaa;
+    font-size:20px;
+}
+
+
+
+/* Policy cards */
+
+main{
+    width:85%;
+    max-width:1000px;
+    margin:auto;
+}
+
+
+.policy-card,
+.promise{
+
+    background:#10172e;
+    padding:35px;
+    margin:25px 0;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    opacity:0;
+    transform:translateY(40px);
+    transition:.8s;
+}
+
+
+.policy-card.show,
+.promise.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+
+
+.policy-card h2,
+.promise h2{
+
+    color:#00eaff;
+    margin-bottom:15px;
+
+}
+
+
+ul{
+    margin-left:25px;
+}
+
+
+li{
+    margin:8px 0;
+}
+
+
+
+/* Promise */
+
+.promise{
+    text-align:center;
+    background:
+    linear-gradient(
+        135deg,
+        #10172e,
+        #15103d
+    );
+}
+
+
+.promise strong{
+    display:block;
+    margin-top:20px;
+    color:#00eaff;
+    font-size:20px;
+}
+
+
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+    padding:40px;
+    color:#888;
+
+}
+
+
+/* Mobile */
+
+@media(max-width:700px){
+
+.hero h2{
+    font-size:40px;
+}
+
+
+main{
+    width:90%;
+}
+
+
+.policy-card{
+    padding:25px;
+}
+
+}
